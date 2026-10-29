@@ -55,7 +55,7 @@ export default function Header() {
           <Link href="/" className="brand-logo" title="Ramdevraa Taxi Service Home">
             <div className="brand-icon-box">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="Ramdevraa Taxi Service Logo"
                 width={44}
                 height={44}
