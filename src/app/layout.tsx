@@ -44,6 +44,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -52,12 +65,21 @@ export const metadata: Metadata = {
     title: "Ramdevraa Taxi Service | 24x7 Cab Booking in Ramdevra (Call 7240372575)",
     description:
       "Reliable, on-time taxi service from Ramdevra Railway Station & Temple to Jodhpur, Jaisalmer, Sam Sand Dunes & Rajasthan destinations. Verified drivers, clean AC cabs.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Ramdevraa Taxi Service Official Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ramdevraa Taxi Service | 24x7 Cab Booking in Ramdevra",
     description:
       "Call 7240372575 to book clean AC taxis from Ramdevra to Jodhpur, Jaisalmer, Sam Dunes & Bikaner.",
+    images: ["/images/logo.png"],
   },
   alternates: {
     canonical: BUSINESS_INFO.siteUrl,

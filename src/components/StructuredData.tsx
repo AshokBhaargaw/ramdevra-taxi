@@ -29,7 +29,8 @@ export default function StructuredData({
     url: BUSINESS_INFO.siteUrl,
     telephone: BUSINESS_INFO.phoneFormatted,
     priceRange: "$$",
-    image: `${BUSINESS_INFO.siteUrl}/images/taxi-service-ramdevra.jpg`,
+    logo: `${BUSINESS_INFO.siteUrl}/images/logo.png`,
+    image: `${BUSINESS_INFO.siteUrl}/images/logo.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS_INFO.address.street,
