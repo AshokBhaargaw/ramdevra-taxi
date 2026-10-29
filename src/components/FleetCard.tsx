@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Users, Briefcase, Wind, Check, Phone } from "lucide-react";
 import { Vehicle, BUSINESS_INFO } from "@/data/siteData";
@@ -15,11 +16,22 @@ export default function FleetCard({ vehicle }: FleetCardProps) {
       )}
 
       <div className="fleet-car-visual">
-        <div className="fleet-car-avatar">
-          <span style={{ fontSize: "2rem" }}>
-            {vehicle.category === "Sedan" ? "🚗" : vehicle.category === "Group" ? "🚐" : "🚙"}
-          </span>
-        </div>
+        {vehicle.image ? (
+          <Image
+            src={vehicle.image}
+            alt={`${vehicle.name} Taxi Service in Ramdevra`}
+            width={480}
+            height={270}
+            className="fleet-car-img"
+            loading="lazy"
+          />
+        ) : (
+          <div className="fleet-car-avatar">
+            <span style={{ fontSize: "2rem" }}>
+              {vehicle.category === "Sedan" ? "🚗" : vehicle.category === "Group" ? "🚐" : "🚙"}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="fleet-card-body">

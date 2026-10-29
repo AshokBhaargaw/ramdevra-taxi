@@ -10,7 +10,7 @@ import { BUSINESS_INFO, POPULAR_ROUTES } from "@/data/siteData";
 const route = POPULAR_ROUTES.find((r) => r.slug === "ramdevra-to-tanot-mata-taxi")!;
 
 export const metadata: Metadata = {
-  title: "Ramdevra to Tanot Mata Temple Taxi | Distance, Fare & Border Tour",
+  title: "Ramdevra to Tanot Mata Temple Taxi | Distance, Border Tour & Cab Booking",
   description:
     "Book Ramdevra to Tanot Mata Temple & Longewala War Memorial taxi. Distance 240 km. Safe border highway yatra with experienced local drivers. Call 7240372575.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: [
     "Ramdevra to Tanot Mata taxi",
     "Ramdevra to Tanot Mata distance",
-    "Ramdevra to Longewala taxi fare",
+    "Ramdevra to Longewala taxi booking",
     "Tanot Mata border temple cab",
     "Ramdevra taxi service 7240372575",
   ],
@@ -91,8 +91,8 @@ export default function TanotMataRoutePage() {
                 <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "var(--primary)" }}>{route.routeHighway}</div>
               </div>
               <div>
-                <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Sedan Starting Fare</div>
-                <div style={{ fontSize: "1.35rem", fontWeight: 900, color: "var(--accent-green)" }}>{route.sedanFare}</div>
+                <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Trip Service</div>
+                <div style={{ fontSize: "1.1rem", fontWeight: 900, color: "var(--accent-green)" }}>One-Way & Return</div>
               </div>
             </div>
 
@@ -109,41 +109,54 @@ export default function TanotMataRoutePage() {
                   Pilgrims often combine this trip with a visit to the <strong>Longewala War Memorial</strong> (scene of the famous 1971 battle).
                 </p>
 
-                <h2>Fare Table for Tanot Mata & Longewala</h2>
+                <h2>Recommended Vehicles for Tanot Mata & Longewala</h2>
                 <div className="table-responsive">
                   <table className="custom-table">
                     <thead>
                       <tr>
-                        <th>Vehicle Type</th>
+                        <th>Vehicle Category</th>
+                        <th>Model</th>
                         <th>Seating Capacity</th>
-                        <th>Fare</th>
-                        <th>Action</th>
+                        <th>Luggage Space</th>
+                        <th>Booking</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><strong>Swift Dzire (Sedan)</strong></td>
+                        <td><strong>Sedan</strong></td>
+                        <td>Swift Dzire / Etios</td>
                         <td>1–4 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.sedanFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a></td>
+                        <td>2 Large Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Maruti Ertiga (MUV)</strong></td>
+                        <td><strong>Family MUV</strong></td>
+                        <td>Maruti Ertiga</td>
                         <td>1–6 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.suvFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a></td>
+                        <td>4 Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Toyota Innova Crysta</strong></td>
+                        <td><strong>Premium SUV</strong></td>
+                        <td>Toyota Innova Crysta</td>
                         <td>1–7 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.innovaFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a></td>
+                        <td>5 Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Force Toofan / Cruiser</strong></td>
-                        <td>1–12 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.toofanFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a></td>
+                        <td><strong>Large Group Cruiser</strong></td>
+                        <td>Force Toofan / Cruiser</td>
+                        <td>9–12 Pax</td>
+                        <td>Roof Luggage Carrier</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

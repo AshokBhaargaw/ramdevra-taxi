@@ -100,7 +100,7 @@ export default function BookingWidget({
           <span>{title}</span>
         </h2>
         <p className="booking-card-subtitle">
-          Confirm your cab in 2 easy steps • Best prices & Zero hidden charges
+          Confirm your cab in 2 easy steps • Verified Cabs & Instant Dispatch
         </p>
 
         {/* 2-Step indicator */}

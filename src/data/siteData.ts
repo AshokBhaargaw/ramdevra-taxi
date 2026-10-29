@@ -68,7 +68,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "Small families, couples, railway station & airport pickups",
     features: ["Chilled AC", "Comfortable Legroom", "Carrier for luggage on demand", "Experienced highway driver", "Clean & sanitized"],
     popular: true,
-    image: "/images/sedan.webp"
+    image: "/images/fleet/swift-dzire.jpg"
   },
   {
     id: "ertiga",
@@ -81,7 +81,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "Medium families, luggage-heavy trips, outstation desert tours",
     features: ["Dual AC vents", "Reclining middle row seats", "Ample luggage space", "Smooth desert ride", "Bottled water"],
     popular: true,
-    image: "/images/ertiga.webp"
+    image: "/images/fleet/ertiga.jpg"
   },
   {
     id: "innova-crysta",
@@ -94,7 +94,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "VIP pilgrims, elderly travellers, corporate and luxury desert travel",
     features: ["Captain seats available", "Triple zone AC", "High safety ratings", "Ultra quiet cabin", "Premium luxury feel"],
     popular: true,
-    image: "/images/innova.webp"
+    image: "/images/fleet/innova.jpg"
   },
   {
     id: "eeco",
@@ -107,7 +107,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "Budget-conscious yatris, short distance transfers",
     features: ["AC available", "Easy boarding for all ages", "Local driver guidance"],
     popular: false,
-    image: "/images/eeco.webp"
+    image: "/images/fleet/eeco.jpg"
   },
   {
     id: "force-toofan",
@@ -120,7 +120,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "Large pilgrim groups, joint families, temple yatra groups",
     features: ["Heavy duty roof carrier", "High ground clearance", "12 Passenger seating", "Desert terrain capable"],
     popular: false,
-    image: "/images/toofan.webp"
+    image: "/images/fleet/toofan.jpg"
   },
   {
     id: "tempo-traveller",
@@ -133,7 +133,7 @@ export const FLEET_DATA: Vehicle[] = [
     idealFor: "Tour groups, community pilgrimage sanghs, multi-city Rajasthan tours",
     features: ["Pushback seats", "Individual reading lamps", "Powerful surround AC", "Large boot & top carrier", "Tour guide support"],
     popular: false,
-    image: "/images/tempo.webp"
+    image: "/images/fleet/tempo.jpg"
   }
 ];
 

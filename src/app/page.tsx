@@ -181,10 +181,10 @@ export default function HomePage() {
               <div className="feature-icon-wrapper">
                 <CheckCircle2 size={28} />
               </div>
-              <h3 className="feature-box-title">100% Transparent Fares</h3>
+              <h3 className="feature-box-title">Reliable & Honest Service</h3>
               <p className="feature-box-desc">
-                No hidden charges, no surprise extra tolls or night surge tariffs. You receive a clear,
-                fixed all-inclusive fare quote before your trip begins.
+                No hidden surprises, no sudden cancellations. Committed local drivers who prioritize
+                your comfort, punctuality, and complete peace of mind.
               </p>
             </div>
           </div>

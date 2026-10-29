@@ -232,7 +232,7 @@ export default function JodhpurRoutePage() {
                   Ready to travel from Ramdevra to Jodhpur?
                 </h3>
                 <p style={{ color: "var(--text-muted)", marginBottom: "1.5rem" }}>
-                  Call our 24x7 control room for instant cab dispatch and free fare quotes.
+                  Call our 24x7 control room for instant cab dispatch and trip assistance.
                 </p>
                 <div style={{ display: "inline-flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
                   <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-lg">

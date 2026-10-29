@@ -97,10 +97,10 @@ export default function BookingPage() {
               <div style={{ background: "#ffffff", padding: "1.5rem", borderRadius: "var(--radius-lg)", border: "1px solid #e2e8f0" }}>
                 <ShieldCheck size={24} style={{ color: "var(--accent-green)", marginBottom: "0.5rem" }} />
                 <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--secondary)", marginBottom: "0.25rem" }}>
-                  Fixed Price Promise
+                  Honest & Transparent
                 </h3>
                 <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                  Toll, state taxes, driver allowance and fuel are clearly quoted with zero hidden surprises.
+                  Clear trip itinerary, verified drivers, and zero sudden cancellations or surge surprises.
                 </p>
               </div>
 

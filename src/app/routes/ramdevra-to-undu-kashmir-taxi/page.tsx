@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Ramdevra to Undu Kashmir taxi",
     "Ramdevra to Undu Kashmir distance",
     "Baba Ramdevji birthplace taxi",
-    "Undu Kashmir Barmer taxi fare",
+    "Undu Kashmir Barmer taxi booking",
     "Ramdevra taxi service 7240372575",
   ],
 };
@@ -91,8 +91,8 @@ export default function UnduKashmirRoutePage() {
                 <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "var(--primary)" }}>{route.routeHighway}</div>
               </div>
               <div>
-                <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Sedan Starting Fare</div>
-                <div style={{ fontSize: "1.35rem", fontWeight: 900, color: "var(--accent-green)" }}>{route.sedanFare}</div>
+                <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Trip Service</div>
+                <div style={{ fontSize: "1.1rem", fontWeight: 900, color: "var(--accent-green)" }}>One-Way & Return</div>
               </div>
             </div>
 
@@ -116,41 +116,54 @@ export default function UnduKashmirRoutePage() {
                   departing Ramdevra in the morning, spending 2 hours for darshan and prasadi at Undu Kashmir, and returning by late afternoon.
                 </p>
 
-                <h2>Fare Table for Undu Kashmir Yatra</h2>
+                <h2>Recommended Vehicles for Undu Kashmir Yatra</h2>
                 <div className="table-responsive">
                   <table className="custom-table">
                     <thead>
                       <tr>
-                        <th>Vehicle Type</th>
+                        <th>Vehicle Category</th>
+                        <th>Model</th>
                         <th>Seating Capacity</th>
-                        <th>Fare</th>
-                        <th>Action</th>
+                        <th>Luggage Space</th>
+                        <th>Booking</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><strong>Swift Dzire (Sedan)</strong></td>
+                        <td><strong>Sedan</strong></td>
+                        <td>Swift Dzire / Etios</td>
                         <td>1–4 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.sedanFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Book Call</a></td>
+                        <td>2 Large Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Maruti Ertiga (MUV)</strong></td>
+                        <td><strong>Family MUV</strong></td>
+                        <td>Maruti Ertiga</td>
                         <td>1–6 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.suvFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Book Call</a></td>
+                        <td>4 Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Toyota Innova Crysta</strong></td>
+                        <td><strong>Premium SUV</strong></td>
+                        <td>Toyota Innova Crysta</td>
                         <td>1–7 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.innovaFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Book Call</a></td>
+                        <td>5 Bags</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td><strong>Force Toofan / Cruiser</strong></td>
-                        <td>1–12 Pax</td>
-                        <td style={{ fontWeight: 800, color: "var(--primary)" }}>{route.toofanFare}</td>
-                        <td><a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Book Call</a></td>
+                        <td><strong>Large Group Cruiser</strong></td>
+                        <td>Force Toofan / Cruiser</td>
+                        <td>9–12 Pax</td>
+                        <td>Roof Luggage Carrier</td>
+                        <td>
+                          <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-primary btn-sm">Call Now</a>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

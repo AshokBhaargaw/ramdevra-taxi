@@ -59,7 +59,7 @@ export default function Header() {
           <nav className="nav-links" aria-label="Main Navigation">
             <Link href="/" className="nav-item">Home</Link>
             <Link href="/booking" className="nav-item">Book Taxi</Link>
-            <Link href="/routes" className="nav-item">Taxi Routes & Fares</Link>
+            <Link href="/routes" className="nav-item">Popular Routes</Link>
             <Link href="/fleet" className="nav-item">Our Fleet</Link>
             <Link href="/about" className="nav-item">About Us</Link>
             <Link href="/contact" className="nav-item">Contact</Link>
@@ -121,7 +121,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 style={{ fontSize: "1.05rem", padding: "0.4rem 0" }}
               >
-                🗺️ Popular Routes & Fares
+                🗺️ Popular Routes
               </Link>
               <Link
                 href="/fleet"
