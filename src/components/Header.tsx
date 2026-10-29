@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Phone, MessageCircle, MapPin, Menu, X, Car, ShieldCheck } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Menu, X, ShieldCheck } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/siteData";
 
 export default function Header() {
@@ -53,7 +54,14 @@ export default function Header() {
         <div className="container header-inner">
           <Link href="/" className="brand-logo" title="Ramdevraa Taxi Service Home">
             <div className="brand-icon-box">
-              <Car size={26} />
+              <Image
+                src="/images/logo.jpg"
+                alt="Ramdevraa Taxi Service Logo"
+                width={44}
+                height={44}
+                className="brand-logo-img"
+                priority
+              />
             </div>
             <div className="brand-text">
               <span className="brand-name">{BUSINESS_INFO.name}</span>

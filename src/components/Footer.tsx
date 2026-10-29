@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, MessageCircle, Mail, MapPin, Clock, ShieldCheck, Star } from "lucide-react";
 import { BUSINESS_INFO, POPULAR_ROUTES, FLEET_DATA } from "@/data/siteData";
@@ -10,21 +11,28 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Column 1: Company Profile */}
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "1rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
               <div
                 style={{
-                  width: "36px",
-                  height: "36px",
-                  borderRadius: "8px",
-                  background: "var(--primary-gradient)",
-                  color: "white",
+                  width: "44px",
+                  height: "44px",
+                  borderRadius: "50%",
+                  background: "#ffffff",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontWeight: 800,
+                  overflow: "hidden",
+                  border: "2px solid #fde68a",
+                  flexShrink: 0,
                 }}
               >
-                R
+                <Image
+                  src="/images/logo.jpg"
+                  alt="Ramdevraa Taxi Service"
+                  width={44}
+                  height={44}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
               </div>
               <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#ffffff" }}>
                 {BUSINESS_INFO.name}

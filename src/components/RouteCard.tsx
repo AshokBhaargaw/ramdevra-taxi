@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Navigation, Clock, ArrowRight, ShieldCheck } from "lucide-react";
 import { RouteDetail } from "@/data/siteData";
@@ -10,6 +11,19 @@ interface RouteCardProps {
 export default function RouteCard({ route }: RouteCardProps) {
   return (
     <div className="route-card">
+      {route.image && (
+        <div className="route-card-image-wrap">
+          <Image
+            src={route.image}
+            alt={`${route.title} - Ramdevraa Taxi Service`}
+            width={480}
+            height={260}
+            className="route-card-image"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       <div className="route-meta-strip">
         <span className="route-pill">
           <Navigation size={12} />

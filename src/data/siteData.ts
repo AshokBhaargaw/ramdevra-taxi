@@ -25,6 +25,7 @@ export interface RouteDetail {
   stopsAlongWay: string[];
   overview: string;
   faqs: { question: string; answer: string }[];
+  image?: string;
 }
 
 export const BUSINESS_INFO = {
@@ -175,6 +176,7 @@ export const POPULAR_ROUTES: RouteDetail[] = [
     slug: "ramdevra-to-jodhpur-taxi",
     title: "Ramdevra to Jodhpur Taxi Service",
     shortTitle: "Ramdevra → Jodhpur",
+    image: "/images/routes/ramdevra-to-jodhpur.webp",
     destination: "Jodhpur (Sun City & Blue City)",
     distance: "175–185 km",
     travelTime: "3 to 4 Hours",
@@ -208,6 +210,7 @@ export const POPULAR_ROUTES: RouteDetail[] = [
     slug: "ramdevra-to-sam-sand-dunes-taxi",
     title: "Ramdevra to Sam Sand Dunes Taxi & Desert Tour",
     shortTitle: "Ramdevra → Sam Sand Dunes",
+    image: "/images/routes/ramdevra-to-sam-dunes.webp",
     destination: "Sam Sand Dunes (Thar Desert)",
     distance: "155–165 km",
     travelTime: "3 to 3.5 Hours",
@@ -237,6 +240,7 @@ export const POPULAR_ROUTES: RouteDetail[] = [
     slug: "ramdevra-to-tanot-mata-taxi",
     title: "Ramdevra to Tanot Mata Temple & Longewala Taxi",
     shortTitle: "Ramdevra → Tanot & Longewala",
+    image: "/images/routes/ramdevra-to-tanot-mata.webp",
     destination: "Tanot Mata Temple & Indo-Pak Border",
     distance: "235–245 km",
     travelTime: "4.5 to 5.5 Hours",
@@ -295,6 +299,7 @@ export const POPULAR_ROUTES: RouteDetail[] = [
     slug: "ramdevra-to-undu-kashmir-taxi",
     title: "Ramdevra to Undu Kashmir (Barmer) Taxi",
     shortTitle: "Ramdevra → Undu Kashmir",
+    image: "/images/routes/ramdevra-to-undu-kashmir.webp",
     destination: "Undu Kashmir (Baba Ramdevji Birthplace)",
     distance: "130–140 km",
     travelTime: "2.5 to 3 Hours",
