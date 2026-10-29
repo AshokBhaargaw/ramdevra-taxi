@@ -27,7 +27,7 @@ export default function Footer() {
                 }}
               >
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/logo.png"
                   alt="Ramdevraa Taxi Service"
                   width={44}
                   height={44}
