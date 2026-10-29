@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
@@ -190,6 +191,52 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+
+          {/* Physical Office Trust Showcase */}
+          <div
+            style={{
+              marginTop: "3rem",
+              background: "linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%)",
+              borderRadius: "var(--radius-xl)",
+              border: "1px solid var(--border-color)",
+              overflow: "hidden",
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "1.5rem",
+              boxShadow: "var(--shadow-md)",
+            }}
+            className="office-showcase-box"
+          >
+            <div style={{ position: "relative", minHeight: "280px" }}>
+              <Image
+                src="/images/shop-office.jpg"
+                alt="Ramdevra Taxi Service Physical Office Counter near Baba Ramdev Ji Mandir"
+                width={1280}
+                height={960}
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                loading="lazy"
+              />
+            </div>
+            <div style={{ padding: "1.75rem" }}>
+              <span className="section-badge">Verified Local Counter</span>
+              <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--secondary)", marginBottom: "0.75rem" }}>
+                Visit Our Ramdevra Booking Counter
+              </h3>
+              <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "1.25rem" }}>
+                Unlike aggregator apps with unknown drivers, <strong>Ramdevraa Taxi Service</strong> operates a dedicated physical office right in Ramdevra near Baba Ramdev Ji Mandir & Railway Station. Walk in for instant booking, pilgrimage guidance, or train station assistance.
+              </p>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-green">
+                  <Phone size={16} />
+                  <span>Call {BUSINESS_INFO.phoneFormatted}</span>
+                </a>
+                <a href={BUSINESS_INFO.googleMapShareUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                  <MapPin size={16} />
+                  <span>Get Office Directions 📍</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -266,6 +313,35 @@ export default function HomePage() {
               Dedicated spiritual tour packages designed to ensure you do not miss any sacred spot around
               Baba Ramdevji Dham.
             </p>
+          </div>
+
+          {/* Best Places to Visit Visual Guide */}
+          <div className="sightseeing-guide-banner">
+            <Image
+              src="/images/sightseeing/places-to-visit-ramdevra.jpg"
+              alt="Best Places to Visit in Ramdevra Rajasthan - Ram Sarovar, Parcha Bawdi, Ramdev Ji Panorama, Runicha Kuaa, Pokhran Fort"
+              width={1600}
+              height={900}
+              className="sightseeing-guide-img"
+              loading="lazy"
+            />
+            <div style={{ padding: "1.25rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem", background: "#ffffff" }}>
+              <div>
+                <strong style={{ fontSize: "1.1rem", color: "var(--secondary)", display: "block" }}>
+                  Complete Ramdevra Teerth Darshan Circuit
+                </strong>
+                <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                  Visiting Ram Sarovar, Parcha Baori, Ramdevji Panorama, Runiche Kuan & Pokhran Fort with local driver guide.
+                </span>
+              </div>
+              <a
+                href={`tel:${BUSINESS_INFO.phone}`}
+                className="btn btn-primary btn-sm"
+              >
+                <Phone size={14} />
+                <span>Book Darshan Cab</span>
+              </a>
+            </div>
           </div>
 
           <div
@@ -351,6 +427,51 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Ramdevra Temple Heritage Panorama Banner */}
+          <div
+            style={{
+              marginTop: "3rem",
+              borderRadius: "var(--radius-xl)",
+              overflow: "hidden",
+              border: "1px solid #fde68a",
+              boxShadow: "var(--shadow-md)",
+              background: "#ffffff",
+            }}
+          >
+            <Image
+              src="/images/sightseeing/ramdevra-darshan-banner.jpg"
+              alt="Shree Baba Ramdev Ji Samadhi Mandir Heritage Panorama & Sacred Lake, Ramdevra"
+              width={1600}
+              height={700}
+              style={{ width: "100%", height: "auto", display: "block" }}
+              loading="lazy"
+            />
+            <div
+              style={{
+                padding: "1.5rem",
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "1rem",
+                background: "linear-gradient(135deg, #fffbeb 0%, #ffffff 100%)",
+              }}
+            >
+              <div>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--secondary)", marginBottom: "0.25rem" }}>
+                  Shree Baba Ramdev Ji Samadhi Dham Darshan Assistance
+                </h3>
+                <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", margin: 0 }}>
+                  Need a ride from Ramdevra Railway Station directly to the Temple VIP gate or hotel dharamshala? Call our local desk anytime.
+                </p>
+              </div>
+              <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-green">
+                <Phone size={16} />
+                <span>Call {BUSINESS_INFO.phoneFormatted}</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

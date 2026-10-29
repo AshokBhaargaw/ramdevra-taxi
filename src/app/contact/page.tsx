@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, MessageCircle, Mail, MapPin, Clock, Send, ShieldCheck } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/siteData";
@@ -194,6 +195,38 @@ export default function ContactPage() {
                 >
                   View on Google Maps 📍
                 </a>
+              </div>
+            </div>
+
+            {/* Physical Counter Office Showcase */}
+            <div className="office-showcase-box">
+              <div style={{ position: "relative", minHeight: "260px" }}>
+                <Image
+                  src="/images/shop-office.jpg"
+                  alt="Ramdevra Taxi Service Physical Office Counter near Baba Ramdev Ji Mandir"
+                  width={1280}
+                  height={960}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
+              </div>
+              <div style={{ padding: "1.75rem" }}>
+                <span className="section-badge">Physical Office</span>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--secondary)", marginBottom: "0.75rem" }}>
+                  Visit Our Local Booking Office
+                </h3>
+                <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "1.25rem" }}>
+                  We are physically located near <strong>Baba Ramdev Ji Mandir & Railway Station, Ramdevra</strong>. Whether you need immediate taxi dispatch upon getting off your train or want to plan your Rajasthan itinerary in person, our local counter is open 24x7 to assist you.
+                </p>
+                <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                  <a href={`tel:${BUSINESS_INFO.phone}`} className="btn btn-green">
+                    <Phone size={16} />
+                    <span>Call {BUSINESS_INFO.phoneFormatted}</span>
+                  </a>
+                  <a href={BUSINESS_INFO.googleMapShareUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                    <MapPin size={16} />
+                    <span>Get Directions 📍</span>
+                  </a>
+                </div>
               </div>
             </div>
 

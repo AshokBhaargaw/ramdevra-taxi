@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, MessageCircle, ShieldCheck, Heart, Users, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/siteData";
@@ -64,6 +65,39 @@ export default function AboutPage() {
               , the dedicated online portal for Baba Ramdevji Temple darshan timings, dharamshala accommodations, and pilgrimage guidance.
             </p>
 
+            {/* Physical Office Image Showcase */}
+            <div
+              style={{
+                margin: "2.5rem 0",
+                borderRadius: "var(--radius-xl)",
+                overflow: "hidden",
+                border: "1px solid var(--border-color)",
+                boxShadow: "var(--shadow-md)",
+                background: "#ffffff",
+              }}
+            >
+              <div style={{ position: "relative", width: "100%", maxHeight: "400px", overflow: "hidden" }}>
+                <Image
+                  src="/images/shop-office.jpg"
+                  alt="Ramdevra Taxi Service Physical Office Counter near Baba Ramdev Ji Mandir"
+                  width={1280}
+                  height={800}
+                  style={{ width: "100%", height: "auto", display: "block", objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ padding: "1.25rem 1.5rem", background: "linear-gradient(135deg, #fffbeb 0%, #ffffff 100%)", borderTop: "1px solid #fde68a" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.35rem" }}>
+                  <MapPin size={18} style={{ color: "var(--primary)" }} />
+                  <strong style={{ fontSize: "1.05rem", color: "var(--secondary)" }}>
+                    Our Verified Walk-in Booking Counter in Ramdevra
+                  </strong>
+                </div>
+                <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", margin: 0 }}>
+                  Located right in Ramdevra near Baba Ramdev Ji Mandir & Railway Station (Tehsil Pokhran, Rajasthan). Walk in for instant taxi service, dharamshala assistance, or station pickup.
+                </p>
+              </div>
+            </div>
+
             <div
               style={{
                 margin: "3rem 0",
@@ -119,6 +153,26 @@ export default function AboutPage() {
               of Baba Ramdevji, local traditions, Rajasthani cuisine recommendations, and helping devotees navigate
               temple entry queues and aarti schedules with ease.
             </p>
+
+            {/* Temple Heritage Panorama */}
+            <div
+              style={{
+                marginTop: "2.5rem",
+                borderRadius: "var(--radius-xl)",
+                overflow: "hidden",
+                border: "1px solid #fde68a",
+                boxShadow: "var(--shadow-md)",
+              }}
+            >
+              <Image
+                src="/images/sightseeing/ramdevra-darshan-banner.jpg"
+                alt="Baba Ramdevji Samadhi Mandir and Holy Pilgrimage Sthals in Ramdevra"
+                width={1600}
+                height={700}
+                style={{ width: "100%", height: "auto", display: "block" }}
+                loading="lazy"
+              />
+            </div>
           </div>
 
           {/* Contact Strip */}

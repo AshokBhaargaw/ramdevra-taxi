@@ -348,16 +348,22 @@ button, input, select, textarea {
 .brand-icon-box {
   width: 44px;
   height: 44px;
-  border-radius: var(--radius-md);
-  background: var(--primary-gradient);
-  color: white;
+  border-radius: 50%;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--gold-glow);
-  font-weight: 800;
-  font-size: 1.35rem;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid #fde68a;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-text {
@@ -1606,3 +1612,62 @@ button, input, select, textarea {
 .prose li {
   margin-bottom: 0.5rem;
 }
+
+/* Image Showcase & Banner Elements */
+.office-showcase-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+  .office-showcase-box {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+  }
+}
+
+.sightseeing-guide-banner {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid #fde68a;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sightseeing-guide-banner:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.sightseeing-guide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.route-hero-banner {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+  background: #f8fafc;
+}
+
+.route-hero-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+

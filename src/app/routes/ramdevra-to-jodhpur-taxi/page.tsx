@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, MessageCircle, MapPin, Navigation, Clock, ShieldCheck, Check, ArrowRight } from "lucide-react";
 import BookingWidget from "@/components/BookingWidget";
@@ -70,6 +71,19 @@ export default function JodhpurRoutePage() {
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "3rem" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "2.5rem" }}>
+              {/* Route Poster Hero Graphic */}
+              {route.image && (
+                <div className="route-hero-banner">
+                  <Image
+                    src={route.image}
+                    alt={`${route.title} - Ramdevraa Taxi Service`}
+                    width={1080}
+                    height={600}
+                    priority
+                  />
+                </div>
+              )}
+
               {/* Top Quick Facts */}
               <div
                 style={{
