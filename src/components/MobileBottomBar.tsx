@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/siteData";
 
 export default function MobileBottomBar() {
@@ -29,12 +28,6 @@ export default function MobileBottomBar() {
         <MessageCircle size={18} />
         <span>WhatsApp</span>
       </a>
-
-      {/* Quick Booking Form Link */}
-      <Link href="/booking" className="mobile-bar-btn book-btn" title="Open Booking Form">
-        <CalendarCheck size={18} />
-        <span>Book Cab</span>
-      </Link>
     </div>
   );
 }
