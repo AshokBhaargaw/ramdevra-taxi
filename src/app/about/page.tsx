@@ -51,7 +51,17 @@ export default function AboutPage() {
             <p>
               We bridged this gap by creating a professional, round-the-clock taxi service operated by local drivers
               who consider serving pilgrims (yatris) as a sacred duty. With zero surge pricing and transparent billing,
-              we have grown to become Ramdevra&apos;s most recommended cab operator.
+              we have grown to become Ramdevra&apos;s most recommended cab operator. We work in association with{" "}
+              <a
+                href="https://ramdevraa.in"
+                target="_blank"
+                rel="noopener"
+                style={{ color: "var(--primary)", fontWeight: 700, textDecoration: "underline" }}
+                title="Ramdevraa.in - Baba Ramdevji Dham Pilgrimage Portal"
+              >
+                Ramdevraa.in
+              </a>
+              , the dedicated online portal for Baba Ramdevji Temple darshan timings, dharamshala accommodations, and pilgrimage guidance.
             </p>
 
             <div

@@ -18,10 +18,16 @@ export default function Header() {
               <MapPin size={14} style={{ color: "var(--primary)" }} />
               <span>Ramdevra Temple & Railway Station, Rajasthan</span>
             </span>
-            <span className="top-link" style={{ display: "none" }}>
-              <ShieldCheck size={14} style={{ color: "#22c55e" }} />
-              <span>Verified Drivers • 24x7 Available</span>
-            </span>
+            <a
+              href="https://ramdevraa.in"
+              target="_blank"
+              rel="noopener"
+              className="top-link"
+              style={{ color: "#fbbf24" }}
+              title="Official Ramdevra Pilgrimage Portal"
+            >
+              <span>Part of Ramdevraa.in ↗</span>
+            </a>
           </div>
           <div className="top-bar-right">
             <a href={`tel:${BUSINESS_INFO.phone}`} className="top-link" title="Call for Taxi Booking">
@@ -147,6 +153,16 @@ export default function Header() {
               >
                 📞 Contact & Location
               </Link>
+              <a
+                href="https://ramdevraa.in"
+                target="_blank"
+                rel="noopener"
+                className="nav-item"
+                onClick={() => setMobileMenuOpen(false)}
+                style={{ fontSize: "1.05rem", padding: "0.4rem 0", color: "var(--primary)", fontWeight: 700 }}
+              >
+                🌐 Ramdevraa.in (Temple Guide) ↗
+              </a>
             </nav>
 
             <div style={{ marginTop: "1.25rem", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>

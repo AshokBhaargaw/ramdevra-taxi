@@ -33,7 +33,16 @@ export default function Footer() {
             <p style={{ fontSize: "0.9rem", lineHeight: 1.6, color: "#94a3b8", marginBottom: "1.25rem" }}>
               Premier taxi and car rental service in Ramdevra (Rajasthan). Providing reliable, safe, and comfortable
               one-way and round-trip transfers for Baba Ramdevji pilgrims, desert tourists, railway station transfers,
-              and airport travel across Rajasthan.
+              and airport travel across Rajasthan. Affiliated with{" "}
+              <a
+                href="https://ramdevraa.in"
+                target="_blank"
+                rel="noopener"
+                style={{ color: "#fbbf24", fontWeight: 700, textDecoration: "underline" }}
+                title="Ramdevraa.in - Baba Ramdevji Pilgrimage Portal"
+              >
+                Ramdevraa.in
+              </a>.
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", color: "#fbbf24", fontSize: "0.85rem" }}>
               <Star size={16} fill="#fbbf24" />
@@ -146,12 +155,33 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>© 2026 {BUSINESS_INFO.name}. All Rights Reserved.</p>
-          <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
+          <p>
+            © 2026 {BUSINESS_INFO.name}. All Rights Reserved. A proud initiative connected with{" "}
+            <a
+              href="https://ramdevraa.in"
+              target="_blank"
+              rel="noopener"
+              style={{ color: "#fbbf24", fontWeight: 700 }}
+              title="Visit Ramdevraa.in - Complete Pilgrimage Guide"
+            >
+              Ramdevraa.in
+            </a>.
+          </p>
+          <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center" }}>
             <Link href="/about" className="footer-link">About Us</Link>
             <Link href="/routes" className="footer-link">Destinations</Link>
             <Link href="/fleet" className="footer-link">Fleet Pricing</Link>
             <Link href="/contact" className="footer-link">Contact</Link>
+            <a
+              href="https://ramdevraa.in"
+              target="_blank"
+              rel="noopener"
+              className="footer-link"
+              style={{ color: "#38bdf8", fontWeight: 600 }}
+              title="Visit Ramdevraa.in for Baba Ramdevji Temple Guide & Timings"
+            >
+              Ramdevraa.in Portal ↗
+            </a>
             <a
               href={BUSINESS_INFO.googleMapShareUrl}
               target="_blank"

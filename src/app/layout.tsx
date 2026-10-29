@@ -74,6 +74,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#d97706" />
         <meta name="format-detection" content="telephone=yes" />
+        <meta name="google-site-verification" content="kQdxU5xw1M-fYSHR1QA1JUQ1aurLDJ6Kvjhlr5Gn9do" />
       </head>
       <body>
         <StructuredData type="home" faqs={GENERAL_FAQS} />
