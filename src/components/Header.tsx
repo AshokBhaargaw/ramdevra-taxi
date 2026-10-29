@@ -73,12 +73,12 @@ export default function Header() {
               title={`Call ${BUSINESS_INFO.phone} for Taxi`}
             >
               <Phone size={16} />
-              <span>Call: {BUSINESS_INFO.phone}</span>
+              <span className="header-call-text">Call: {BUSINESS_INFO.phone}</span>
             </a>
 
             <button
               type="button"
-              className="btn btn-outline btn-sm"
+              className="btn btn-outline btn-sm mobile-menu-toggle"
               style={{ display: "inline-flex", minWidth: "42px", padding: "0.5rem" }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle navigation menu"

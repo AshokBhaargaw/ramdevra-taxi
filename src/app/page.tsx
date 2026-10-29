@@ -101,9 +101,11 @@ export default function HomePage() {
                 gap: "0.6rem",
                 backgroundColor: "#ffffff",
                 padding: "0.5rem 1rem",
-                borderRadius: "var(--radius-full)",
+                borderRadius: "var(--radius-lg)",
                 boxShadow: "var(--shadow-sm)",
                 border: "1px solid #f1f5f9",
+                maxWidth: "100%",
+                flexWrap: "wrap",
               }}
             >
               <div style={{ display: "flex", gap: "2px", color: "#f59e0b" }}>
@@ -269,7 +271,7 @@ export default function HomePage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
               gap: "2rem",
             }}
           >
